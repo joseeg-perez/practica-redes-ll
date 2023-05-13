@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #6bae9c;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #ffa366;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #ffd166;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: #ffa366;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ffa366;
+  margin-top: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h2>El blog de Jose 😎</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>ACTIVIDADES FAVORITAS</h2>
+      <div class="fakeimg" ></div>
+      <p>Dentro de las cosas que mas disfruto hacer, estan:</p>
+      <ul>
+        <li>Ir a la playa.</li>
+        <li>Hacer ejercicio al aire libre.</li>
+        <li>Escuchar musica.</li>
+        <li>Comer helao.</li>
+        <li>Pasar tiempo con mis seres queridos.</li>
+
+
+      </ul>
+    </div>
+    <div class="card">
+      <h2>POR QUE DECIDI ESTUDIAR INFORMATICA?</h2>
+      <div class="fakeimg"> <img class="center" src="/imagenes/jose/codigo (1).jpeg" width="300" height="400"> </div>
+      <p>Al estar en busqueda de una carrera no tenia para nada claro cual elegir, ingenieria informatica era la que entre todas me parecia mas interesante.</p>
+      <p>Asi que opte por esta opcion, teniendo una idea muy basica de lo que en verdad era. Hoy en dia he aprendido mucho y he adquirido una vision completamente distinta de
+        lo que realmente es la carrera y lo que involucra el proceso para crear un producto de software.
+      </p>
+      <p>Actualmente me siento muy contento de la decision que tome y siento que el camino ha valido la pena 
+        he tenido la oportunidad de conocer a muchas personas, algunas de ellas las cuales son muy especiales para mi hoy en dia y que quiero y valoro mucho.
+      </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>ACERCA DE MI</h2>
+      <div class="fakeimg center"><img src="/imagenes/jose/selfie.jpeg" width="300" height="400"> </div>
+      
+      <p>Me considero una persona amigable, divertida . </p>
+      <p>Me gustan muchos los deportes, a lo largo de mi vida he tenido la oportunidad
+        de practicar muchos de ellos, pero actualment mis favoritos son el tenis y el futbol.
+      </p>
+      <p></p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><img class="center" src="/imagenes/jose/DSC03465.JPG" width="300" height="300"></div><br>
+      <div class="fakeimg"><img src="/imagenes/jose/josetenisog.png" width="300" height="300"></div><br>
+      <div class="fakeimg"><img src="/imagenes/jose/playaJose.png" width="300" height="300"></div>
+    </div>
+    <div class="card">
+      <h3>SIGUEME!</h3>
+      <a href="https://www.instagram.com/joseeg.perez/">Instagram</a>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Universidad Catolica Andres Bello</p>
+  <p>Actividad realizada para el laboratorio de redes de computadores II.</p>
+  <p>05/05/2023</p>
+  <a href="./francis.html">Ir al blog de mi companera de practica</a>
+
+</div>
+
+</body>
+</html>
